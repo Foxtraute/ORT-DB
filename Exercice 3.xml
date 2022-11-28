@@ -60,7 +60,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="785" y="55" name="Livres">
+<table x="766" y="47" name="Livres">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -71,27 +71,23 @@
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="Catégories" row="id" />
 </row>
-<row name="id_Emprunt" null="1" autoincrement="0">
+<row name="id_Auteurs" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
-<default>NULL</default><relation table="Emprunt" row="id" />
+<default>NULL</default><relation table="Auteurs" row="id" />
 </row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="1049" y="118" name="Auteurs">
+<table x="1022" y="206" name="Auteurs">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="id_Livres" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default><relation table="Livres" row="id" />
-</row>
 <key type="PRIMARY" name="">
 <part>id</part>
 </key>
 </table>
-<table x="1052" y="242" name="Catégories">
+<table x="1023" y="120" name="Catégories">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -124,13 +120,13 @@
 <row name="Dictionnaires" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
-<row name="BD" null="1" autoincrement="0">
-<datatype>INTEGER</datatype>
-<default>NULL</default></row>
 <row name="Livres" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="Livres" row="id" />
-<relation table="Designation public" row="id" />
+</row>
+<row name="BD" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Designation public" row="id" />
 </row>
 <row name="id_Documents" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
@@ -140,7 +136,7 @@
 <part>id</part>
 </key>
 </table>
-<table x="591" y="401" name="Journaux">
+<table x="602" y="399" name="Journaux">
 <row name="id" null="1" autoincrement="1">
 <datatype>INTEGER</datatype>
 <default>NULL</default></row>
@@ -176,6 +172,10 @@
 <row name="id_Lecteurs / Adhérants" null="1" autoincrement="0">
 <datatype>INTEGER</datatype>
 <default>NULL</default><relation table="Lecteurs / Adhérants" row="id" />
+</row>
+<row name="id_Livres" null="1" autoincrement="0">
+<datatype>INTEGER</datatype>
+<default>NULL</default><relation table="Livres" row="id" />
 </row>
 <key type="PRIMARY" name="">
 <part>id</part>
