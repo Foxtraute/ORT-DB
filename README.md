@@ -8,3 +8,5 @@ Exercice 2:
 
 Exercice 3:
 ![Exercice 3](https://user-images.githubusercontent.com/117092413/204234663-d4d26ada-91ae-48a6-8c05-3457356353a9.png)
+
+Exercice 4:
